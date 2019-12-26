@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="helang.love@qq.com">
+    <title>仿马蜂窝旅游网</title>
+    <link rel="stylesheet" href="css/helang.css">
+   <link type="text/css" href="css/jq22.css" rel="stylesheet" />
+   <link rel="stylesheet" href="css/zySearch.css" type="text/css" />
+   <script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+		
+  
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+			
+		</script>
+		<script type="text/javascript" src="js/zxf_page.js">
+			
+		</script>
+   <style type="text/css">
+   body,td,th {
+	font-family: "Microsoft YaHei", "Times New Roman", Times, serif;
+}
+body {
+	background-color: #FFFFFF;
+}
+   </style>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jq22.js"></script>
+ <style type="text/css">
+        .picCenter {
+            width: 1200px;
+            margin: 15px auto;
+        }
+
+        .xinxiIcon {
+            margin:0 0 -20px auto;
+        }
+
+        .xinxiIcon img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+		
+		.photo_img img {box-sizing: border-box;border: 1px solid #fff;transition:all .7s ease 0s;
+         
+        }
+		.photo_img img:hover {box-sizing: border-box;border: 1px solid #023246;
+          box-shadow: 1px 0px 15px -3px rgba(0,0,0,0.53);
+-webkit-box-shadow: 1px 0px 15px -3px rgba(0,0,0,0.53);
+-moz-box-shadow: 1px 0px 15px -3px rgba(0,0,0,0.53);
+        }
+
+        .photo_nr {
+            display: flex;
+            align-items: center;
+            width: 888px;
+            margin: 15px auto;
+        }
+
+        .informationText {
+            width: 888px;
+            margin: 15px auto;
+            text-align: center;
+        }
+
+        .informationText span {
+
+            background: #ffffff;
+            color: #1C1F86;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .photo_nr ul li {
+            float: left;
+            margin: 0 35px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .photo_nr p {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        #LeftArr {
+            background: url(img/e_left.png) no-repeat;
+            width: 40px;
+            height: 40px;
+            margin-left: -15px;
+            text-decoration: none;
+            color: #323232;
+        }
+
+        #RightArr {
+            background: url(img/e_right.png) no-repeat;
+            width: 40px;
+            height: 40px;
+            margin-right: -15px;
+            text-decoration: none;
+            color: #323232;
+        }
+        .listRotation{
+            border: 1px solid #023246;
+        }
+    .left {
+	float: left;
+	height: 1700px;
+	width: 301px;
+}
+ .left .left1 {
+	background-image: url(images/01.png);
+	height: 356px;
+	width: 301px;
+}
+ .left .left2 {
+	background-image: url(images/02.png);
+	height: 238px;
+	width: 271px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+ .left .left3 {
+	background-image: url(images/03.png);
+	height: 280px;
+	width: 301px;
+	padding-top: 10px;
+}
+ .left .left4 {
+	background-image: url(images/04.png);
+	height: 240px;
+	width: 301px;
+	padding-top: 10px;
+}
+ .left .left5 {
+	background-image: url(images/05.png);
+	height: 203px;
+	width: 301px;
+	padding-top: 10px;
+}
+ .left .left6 {
+	background-image: url(images/06.png);
+	height: 235px;
+	width: 301px;
+	padding-top: 10px;
+}
+ .dbody {
+	height: 2200px;
+	width: 1200px;
+	padding-left: 100px;
+}
+ .dbody .box1 .images {
+	float: left;
+}
+ .dbody .box2 .images {
+	float: left;
+}
+ .dbody .dleft {
+	float: left;
+	height: 2200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft1 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft2 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft3 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft4 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft6 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft7 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft8 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft9 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft10 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft5 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dleft .dleft11 {
+	height: 200px;
+	width: 250px;
+}
+ .dbody .dright {
+	float: right;
+	height: 2200px;
+	width: 800px;
+}
+ .dbody .right {
+	height: 2200px;
+	width: 800px;
+	padding-left: 10px;
+	float: right;
+}
+ .footer {
+	background-image: url(images/08.png);
+	height: 585px;
+	width: 1701px;
+	padding-left: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+ </style>
+<style>
+
+* {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: none;
+
+	zoom: 1;
+
+}
+
+ul li {
+
+	list-style: none;
+
+}
+
+.box {
+	width: 52px;
+	height: 162px;
+	border: 1px solid #ccc;
+	position: relative;
+	float: right;
+	padding-bottom: 800px;
+}
+
+.box ul li {
+
+	width: 48px;
+
+	display: block;
+
+	height: 50px;
+
+	padding: 2px;
+
+	overflow: hidden
+
+}
+
+.weixin {
+
+	background: url(elevator.png) no-repeat;
+
+	background-position: 0 87%;
+
+	-webkit-transition: all .3s;
+
+	-moz-transition: all .3s;
+
+	-ms-transition: all .3s;
+
+	-o-transition: all .3s;
+
+}
+
+.weixin:hover {
+
+	background-position: 0 93%
+
+}
+
+.weixin:hover .weixin-logo {
+
+	width: 170px;
+
+	height: 204px;
+
+}
+
+.idea {
+
+	background: url(elevator.png) no-repeat;
+
+	background-position: 0 43%;
+
+	-webkit-transition: all .3s;
+
+	-moz-transition: all .3s;
+
+	-ms-transition: all .3s;
+
+	-o-transition: all .3s;
+
+}
+
+.idea:hover {
+
+	background-position: 0 49%;
+
+}
+
+.app {
+
+	background: url(elevator.png) no-repeat;
+
+	background-position: 0 55%;
+
+	-webkit-transition: all .3s;
+
+	-moz-transition: all .3s;
+
+	-ms-transition: all .3s;
+
+	-o-transition: all .3s;
+
+}
+
+.app:hover {
+
+	background-position: 0 61%;
+
+}
+
+.app:hover .app-logo {
+
+	width: 170px;
+
+	height: 185px;
+
+	-webkit-transform: rotate(360deg);
+
+	-moz-transform: rotate(360deg);
+
+	-ms-transform: rotate(360deg);
+
+	-o-transform: rotate(360deg);
+
+}
+
+.weixin-logo {
+
+	background: url(elevator.png) no-repeat;
+
+	background-position: 0 0;
+
+	width: 0px;
+
+	height: 0px;
+
+	overflow: hidden;
+
+	position: absolute;
+
+	top: -154px;
+
+	left: -171px;
+
+	-webkit-transition: all .3s;
+
+	-moz-transition: all .3s;
+
+	-ms-transition: all .3s;
+
+	-o-transition: all .3s;
+
+}
+
+.app-logo {
+
+	background: url(elevator.png) no-repeat;
+
+	background-position: 0 26%;
+
+	width: 0px;
+
+	height: 0px;
+
+	overflow: hidden;
+
+	position: absolute;
+
+	top: -18px;
+
+	left: -171px;
+
+	-webkit-transition: all .3s;
+
+	-moz-transition: all .3s;
+
+	-ms-transition: all .3s;
+
+	-o-transition: all .3s;
+
+}
+
+</style>
+</head>
+<body>
+<nav class="hl_nav">
+    <ul class="nav_list">
+        <li class="active">
+            <a class="nav_head" href="javascipt:;">首页</a>
+            <ul class="offset_left">
+                <li><a href="javascipt:;">网站首页-1</a></li>
+                <li><a href="javascipt:;">网站首页-2</a></li>
+                <li><a href="javascipt:;">网站首页-3</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="nav_head" href="javascipt:;">目的地</a>
+            <ul class="offset_left">
+                <li><a href="javascipt:;">在线下载-1</a></li>
+                <li><a href="javascipt:;">在线下载-2</a></li>
+                <li><a href="javascipt:;">在线下载-3</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="nav_head" href="javascipt:;">旅游攻略</a>
+            <ul class="offset_left offset_1">
+                <li><a href="javascipt:;">成功案例-1</a></li>
+                <li><a href="javascipt:;">成功案例-2</a></li>
+                <li><a href="javascipt:;">成功案例-3</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="nav_head" href="javascipt:;">去旅行</a>
+            <ul class="offset_left offset_2">
+                <li><a href="javascipt:;">新闻动态-1</a></li>
+                <li><a href="javascipt:;">新闻动态-2</a></li>
+                <li><a href="javascipt:;">新闻动态-3</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="nav_head" href="javascipt:;">机票</a>
+            <ul class="offset_left offset_3">
+                <li><a href="javascipt:;">与我联系-1</a></li>
+                <li><a href="javascipt:;">与我联系-2</a></li>
+                <li><a href="javascipt:;">与我联系-3</a></li>
+                <li><a href="javascipt:;">与我联系-4</a></li>
+                <li><a href="javascipt:;">与我联系-5</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="nav_head" href="javascipt:;">订酒店</a>
+            <ul class="offset_left offset_5">
+                <li><a href="javascipt:;">资讯栏目-1</a></li>
+                <li><a href="javascipt:;">资讯栏目-2</a></li>
+                <li><a href="javascipt:;">资讯栏目-3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="nav_head" href="javascipt:;">社区</a>
+            <ul class="offset_left offset_6">
+                <li><a href="javascipt:;">组织架构-1</a></li>
+                <li><a href="javascipt:;">组织架构-2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="nav_head" href="javascipt:;">APP</a>
+            <ul class="offset_right offset_2">
+                <li><a href="javascipt:;">专业团队-1</a></li>
+                <li><a href="javascipt:;">专业团队-2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="nav_head" href="javascipt:;">马蜂窝旅游者</a>
+            <ul class="offset_right offset_1">
+                <li><a href="javascipt:;">招贤纳士-1</a></li>
+                <li><a href="javascipt:;">招贤纳士-2</a></li>
+                <li><a href="javascipt:;">招贤纳士-3</a></li>
+                <li><a href="javascipt:;">招贤纳士-4</a></li>
+            </ul>
+        </li>
+      
+    </ul>
+    <div class="shade"></div>
+</nav>
+<div id="zSlider">
+  <div id="picshow">
+    <div id="picshow_img">
+      <ul>
+        <li><a href="#"><img src="images/a1.png"></a></li>
+        <li><a href="#"><img src="images/a2.png"></a></li>
+        <li><a href="#"><img src="images/a3.png"></a></li>
+        <li><a href="#"><img src="images/a4.png"></a></li>
+        <li><a href="#"><img src="images/a5.png"></a></li>
+        <li><a href="#"><img src="images/a6.png"></a></li>
+      </ul>
+    </div>
+    =
+  </div>
+  <div id="select_btn">
+    <ul>
+      <li><a href="#"><img src="images/a1.png"><span class="select_text">垂直轮播插件标题信息内容1</span><span class="select_date">2019/01/16</span></a></li>
+      <li><a href="#"><img src="images/a2.png"><span class="select_text">垂直轮播插件标题信息内容2</span><span class="select_date">2019/01/15</span></a></li>
+      <li><a href="#"><img src="images/a3.png"><span class="select_text">垂直轮播插件标题信息内容3</span><span class="select_date">2019/01/13</span></a></li>
+      <li><a href="#"><img src="images/a4.png"><span class="select_text">垂直轮播插件标题信息内容4</span><span class="select_date">2019/01/08</span></a></li>
+      <li><a href="#"><img src="images/a5.png"><span class="select_text">垂直轮播插件标题信息内容5</span><span class="select_date">2019/12/28</span></a></li>
+      <li><a href="#"><img src="images/a6.png"><span class="select_text">垂直轮播插件标题信息内容6</span><span class="select_date">2019/12/26</span></a></li>
+    </ul>
+  </div>
+</div>
+<div style="">
+  <span class="zySearch" id="zySearch"></span>
+</div>
+	
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/zySearch.js"></script>
+	
+<script type="text/javascript">
+	
+		$("#zySearch").zySearch({
+			"width":"355",
+			"height":"33",
+			"parentClass":"pageTitle",
+			"callback":function(keyword){
+				console.info("搜索的关键字");
+				console.info(keyword);
+			}
+		});
+	
+	</script>
+<div class="picCenter">
+
+    <div class="listRotation">
+        <div class="informationText">
+            <span>ScrollPic.js图片切换</span>
+        </div>
+        <div class="photo_nr">
+            <a href="javascript:;" id="LeftArr"></a>
+            <ul id="picList1" style="width: 888px;overflow: hidden;">
+                <li>
+                    <div class="photo_img"><img src="images/t1.png" alt=""/></div>
+                    <p>image1</p>
+                </li>
+                <li>
+                    <div class="photo_img"><img src="img/t2.png" alt=""/></div>
+                    <p>image2</p>
+                </li>
+                <li>
+                    <div class="photo_img"><img src="img/t3.png" alt=""/></div>
+                    <p>image3</p>
+                </li>
+                <li>
+                    <div class="photo_img"><img src="img/t4.png" alt=""/></div>
+                    <p>image4</p>
+                </li>
+                <li>
+                    <div class="photo_img"><img src="img/t5.png" alt=""/></div>
+                    <p>image5</p>
+                </li>
+                <div style="clear: both;"></div>
+            </ul>
+            <a href="javascript:;" id="RightArr"></a>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/aScrollPic.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function () {
+        var cc1 = new ScrollPic();
+        cc1.scrollContId = "picList1"; // 内容容器ID,picList1加到容器上，
+        cc1.arrLeftId = "LeftArr";//左箭头ID
+        cc1.arrRightId = "RightArr"; //右箭头ID
+        cc1.frameWidth = 1200; //显示框的宽度
+        cc1.pageWidth = 1; //翻页宽度
+        cc1.speed = 10; //移动速度(单位毫秒，越小越快)
+        cc1.space = 10; //每次移动像素(单位px，越大越快)
+        cc1.autoPlay = true; //自动播放
+        cc1.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+        cc1.initialize(); //初始化
+    });
+</script>
+<div class="left">
+ <div class="left1"></div>
+ <div class="left2"></div>
+ <div class="left3"></div>
+ <div class="left4"></div>
+ <div class="left5"></div>
+  <div class="left6"></div>
+ 
+ 
+ 
+ 
+ 
+ 
+</div>
+<div class="dbody">
+
+ <div class="dleft">
+  <div class="dleft1">dleft1</div>
+  <div class="dleft2">dleft2</div>
+  <div class="dleft3">dleft</div>
+  <div class="dleft4">dleft</div>
+  <div class="dleft5">dleft</div>
+  <div class="dleft6">dleft</div>
+  <div class="dleft7">dleft</div>
+  <div class="dleft8">dleft</div>
+  <div class="dleft9">dleft</div>
+  <div class="dleft10">dleft</div>
+  <div class="dleft11">dleft</div>
+ 
+</div>
+ <p>vhgv
+   gvhvjbhbjbj</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>gu'j'h'g'h'g'i'h'h记号记号比</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>故原告与贵hi会</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>g'yu'g'yu'gu'y'gu'y'gu'g'yu</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>及hi健康可能就会健康和</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>偶会韩国i空间和南京合肥</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>从国家欧空hi金刚护法国会不关乎</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>噢哦和v韩国发帖用户</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>u韩</p>
+ <p>国i还包括不可能看过合法合规v计划</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>发会儿回复is恢复快告诉客户反馈说</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+<div class="footer"></div>
+</body>
+
+</html>
