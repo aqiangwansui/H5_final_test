@@ -1,0 +1,114 @@
+{
+  "id": "1573278",
+  "name": "webapp",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "860713",
+      "name": "左侧滑",
+      "font_class": "zuocehua",
+      "unicode": "e6fd",
+      "unicode_decimal": 59133
+    },
+    {
+      "icon_id": "1203697",
+      "name": "新闻",
+      "font_class": "quanbuxinwen",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1244207",
+      "name": "知乎",
+      "font_class": "zhihu",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "1546598",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "2087566",
+      "name": "医学",
+      "font_class": "yixue",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "2132563",
+      "name": "旅游",
+      "font_class": "lvyou",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "4320335",
+      "name": "登录",
+      "font_class": "denglu",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "4770741",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "4933375",
+      "name": "人物-人",
+      "font_class": "renwu-ren",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    },
+    {
+      "icon_id": "6970028",
+      "name": "问答",
+      "font_class": "wenda",
+      "unicode": "e703",
+      "unicode_decimal": 59139
+    },
+    {
+      "icon_id": "8065283",
+      "name": "bookmark",
+      "font_class": "bookmark",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "9452009",
+      "name": "直播",
+      "font_class": "zhibo-",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "10135514",
+      "name": "厨余垃圾-果壳",
+      "font_class": "chuyulaji-guoke",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "10736720",
+      "name": "工作台2",
+      "font_class": "gongzuotai",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "10918077",
+      "name": "bilibili-fill",
+      "font_class": "bilibili-css",
+      "unicode": "e75c",
+      "unicode_decimal": 59228
+    }
+  ]
+}

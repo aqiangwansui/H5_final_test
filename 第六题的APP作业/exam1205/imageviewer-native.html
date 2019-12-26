@@ -1,0 +1,130 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Hello MUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="css/mui.min.css">
+    <!--App自定义的css-->
+    <style type="text/css">
+      p img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .mui-content>.mui-table-view:first-child {
+        margin-top: 0;
+      }
+      
+      body,
+      .mui-content {
+        background-color: #FFFFFF;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="mui-content">
+      <ul class="mui-table-view">
+        <li class="mui-table-view-cell" id="loop_switch">
+          是否循环预览
+          <div class="mui-switch">
+            <div class="mui-switch-handle"></div>
+          </div>
+        </li>
+      </ul>
+      <div class="mui-content-padded">
+        <!--<div class="mui-input-row" id="loop_switch">
+          <label>是否循环预览</label>
+          <div class="mui-switch mui-active">
+            <div class="mui-switch-handle"></div>
+          </div>
+        </div>-->
+        
+        <p>
+          <img src="images/ZG.jpg" />
+        </p>
+        <p>看漫画是可以放松心情的，逃离一下各种模式的“喧嚣”，特别是自己感兴趣的漫画类型。</p>
+        
+          <img src="images/zmnr.jpg" />
+        </p>
+         <p>
+
+
+
+好一场跨过腾腾夏日，终于在光影纠缠的秋日里落下盛大帷幕的谋杀案。Marc Cherry终究没让我们失望。</p>
+        <p>
+        
+        <p>
+          <img src="images/jz.jpg" />
+        </p>
+        <p>
+        	<ul>
+        		寂寞围绕着电视
+在两点半消失
+多希望有人来陪我 度过末日
+空虚敲打着意志
+彷佛这时间已静止
+我怀疑人们的生活 有所掩饰
+啊 垂死坚持 啊 已消失
+        		
+        		
+        	</ul>
+        </p>
+      </div>
+    </div>
+    <nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active"href="index.html">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a class="mui-tab-item" href="imageviewer-native.html">
+		        <span class="mui-icon mui-icon-phone"></span>
+		        <span class="mui-tab-label">新闻</span>
+		    </a>
+		    <a class="mui-tab-item"href="page1.html">
+		        <span class="mui-icon mui-icon-email"></span>
+		        <span class="mui-tab-label">人物志</span>
+		    </a>
+		    <a class="mui-tab-item" href="login.html">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">登录</span>
+		    </a>
+		</nav>
+  </body>
+  
+  <script src="js/mui.min.js"></script>
+  <script type="text/javascript">
+    mui.plusReady(function() {
+      var loopFlag = false; //默认不支持轮播
+      var loopSwitch = document.getElementById('loop_switch');
+      loopSwitch.addEventListener('toggle', function(event) {
+        if(event.detail.isActive) {
+          loopFlag = true;
+        } else {
+          loopFlag = false;
+        }
+      });
+      var images = [].slice.call(document.querySelectorAll('.mui-content-padded img'));
+      var urls = [];
+      images.forEach(function(item) {
+        urls.push(item.src);
+      });
+      mui('.mui-content-padded').on('tap', 'img', function() {
+        var index = images.indexOf(this);
+        plus.nativeUI.previewImage(urls, {
+          current: index,
+          loop: loopFlag,
+          indicator: 'number'
+        });
+      });
+    });
+  </script>
+<script >
+        	mui.init();   	mui('body').on('tap','a',function(){document.location.href=this.href;});
+	   </script>
+</html>
